@@ -1,6 +1,6 @@
-t=int(input())
+test=int(input())
 ans=[]
-for _ in range(t):
+for _ in range(test):
     current_min= float('inf')
     a,b=map(int,input().split())
     for c in range(a,b+1):
