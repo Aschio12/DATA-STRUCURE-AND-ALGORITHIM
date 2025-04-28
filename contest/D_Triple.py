@@ -9,8 +9,7 @@ for _ in range(test):
             count+=1
             if count==3:
                 print(number[i])
-                break
-           
+                break   
         else:
             count=1
     if count<3:
