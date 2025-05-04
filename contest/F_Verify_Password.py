@@ -1,30 +1,24 @@
 for _ in range(int(input())):
-    l = int(input())
-    p = list(input())
-
-    letters = []
-    digits = []
-
-    for ch in p:
-        if ch.isdigit():
-            digits.append(int(ch))
+    l=int(input())
+    p=list(input())
+    d=[]
+    a=[]
+    for i in p:
+        if i.isdigit():
+            d.append(i)
         else:
-            if not ch.islower():
+            a.append(i)
+    d=list(map(int,d))
+    c=''.join(a)
+    temp1=a.sort()
+    tem2=d.sort()
+    if c.lower()!=c:
+        print("NO")
+    elif a==temp1 and d==tem2:
+        p=''.join(p)
+        for i in range(1,len(p)):
+            if p[i].isdigit() and  p[i-1].isalpha():
                 print("NO")
-                break
-            letters.append(ch)
-    else:
-        if letters != sorted(letters) or digits != sorted(digits):
-            print("NO")
-            continue
-
-        found_digit = False
-        valid = True
-        for ch in p:
-            if ch.isdigit():
-                found_digit = True
-            elif found_digit and ch.isalpha():
-                valid = False
-                break
-
-        print("YES" if valid else "NO")
+                break 
+        print("YES")
+                
