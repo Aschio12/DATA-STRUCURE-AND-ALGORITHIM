@@ -1,7 +1,6 @@
 nums = [3, 3]
 target = 6
 
-# Create a list of tuples (value, original index) and sort by value
 temp = sorted([(num, i) for i, num in enumerate(nums)], key=lambda x: x[0])
 
 l, r = 0, len(temp) - 1
