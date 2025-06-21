@@ -16,6 +16,6 @@ def main():
     candidates = {player for player, total in scores.items() if total == max_score}
     
     for name, total in history:
-        if name in candidates and total == max_score:
+        if name in candidates and total >= max_score:
             return(name)
 print(main())

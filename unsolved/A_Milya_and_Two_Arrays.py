@@ -18,3 +18,4 @@ for _ in range(t):
 for res in results:
     print(res)
     
+    #ai submitted but not understanded

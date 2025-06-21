@@ -1,6 +1,4 @@
-nums=[3,2,1,5]
-nums.sort()
-nums.reverse()
-nums="".join(str(n) for n in nums)
-print(nums)
-
+for _ in range(int(input())):
+    a,b=map(int,(input()).split())
+    
+    print(min(a,b),max(a,b))

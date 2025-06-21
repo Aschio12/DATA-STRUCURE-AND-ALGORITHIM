@@ -25,3 +25,5 @@ for _ in range(t):
                 print(f"{a0} {b0}")
             else:
                 print(f"0 {k}")
+                
+#ai accepted but done by self
